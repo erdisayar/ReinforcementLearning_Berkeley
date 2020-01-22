@@ -24,30 +24,47 @@ input_parameters = ['-l', 'bigMaze', '-z', '.5', '-p', 'SearchAgent', '-a', 'fn=
 
 
 ## Depth First Search(DFS)
-<img src="media/bigmaze_DFS.png" height="282" width="542">
-```
-$ python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=dfs
+<img src="media/bigmaze_DFS.png" height="450" width="450">
 
-## Breadth First Search(BFS)
-<img src="media/bigmaze_BFS.png" height="282" width="542">
+```sh
+python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=dfs
 ```
-$ python pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5
+## Breadth First Search(BFS)
+<img src="media/bigmaze_BFS.png" height="450" width="450">
+
+```sh
+python pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5
+```
 
 ## Uniform Cost Search (UCS)
-<img src="media/bigmaze_UCS.png" height="282" width="542">
+<img src="media/bigmaze_ucs.png" height="450" width="450">
+
+```sh
+python pacman.py -l bigMaze -p SearchAgent -a fn=ucs
 ```
-$ python pacman.py -l bigMaze -p SearchAgent -a fn=ucs
 
 ## A* Search
-<img src="media/bigmaze_astar.png" height="282" width="542">
+<img src="media/bigmaze_astar.png" height="450" width="450">
+
+```sh
+python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
 ```
-$ python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
 
 
 - DFS, BFS, UCS, ASTAR, ASTAR heuristic 
+```sh
+python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=dfs
+python pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5
 ```
-$ python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=dfs
-$ python pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5
 
 
+# REINFORCEMENT LEARNING
 
+## Q-learning
+
+[![](http://img.youtube.com/vi/vj7c6t9Eb5w/0.jpg)](http://www.youtube.com/watch?v=vj7c6t9Eb5w "")
+
+## PACMAN
+[![](http://img.youtube.com/vi/-CDq9vIAwds/0.jpg)](http://www.youtube.com/watch?v=-CDq9vIAwds "")
+## CRAWLER
+[![](http://img.youtube.com/vi/X9o_uLF4Goc/0.jpg)](http://www.youtube.com/watch?v=X9o_uLF4Goc "")
